@@ -17,8 +17,9 @@
     curl http://www.jsoftware.com/download/j903/install/j903_linux64.tar.gz | tar xvz -C ~/opt
     ~/opt/j903/bin/jconsole
     install 'qtide'
-    d^D
-    ln -s ~/opt/j903/bin/jqt /usr/local/bin/jqt
+    ^D
+    cat "alias jqt='~/opt/j903/jqt.sh'" >> ~/.profile
+    source ~/.profile
 
 ### Install J Jupyter kernel
 
@@ -27,6 +28,12 @@
     python setup.py install
     cd ..
     rm -rf jkernel-3.2.4
+
+### Install useful packages (inside J)
+
+    install 'labs/labs'
+    install 'graphics/plot'
+    install 'graphics/viewmat'
 
 ## Commands
 
