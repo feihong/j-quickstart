@@ -21,6 +21,13 @@
     cat "alias jqt='~/opt/j903/jqt.sh'" >> ~/.profile
     source ~/.profile
 
+### Install useful packages (inside J)
+
+    install 'labs/labs'
+    install 'graphics/plot'
+    install 'graphics/viewmat'
+    install 'convert/json'
+
 ### Install J Jupyter kernel
 
     curl https://github.com/martin-saurer/jkernel/archive/refs/tags/3.2.4.tar.gz | tar xvz
@@ -28,12 +35,6 @@
     python setup.py install
     cd ..
     rm -rf jkernel-3.2.4
-
-### Install useful packages (inside J)
-
-    install 'labs/labs'
-    install 'graphics/plot'
-    install 'graphics/viewmat'
 
 ## Commands
 
@@ -46,3 +47,7 @@ Run J's Qt IDE
 - [System/Installation/J903/Zips](https://code.jsoftware.com/wiki/System/Installation/J903/Zips)
 - [Qt IDE install](https://code.jsoftware.com/wiki/Guides/Qt_IDE/Install)
 - [J kernel for Jupyter](https://github.com/martin-saurer/jkernel)
+
+## Notes
+
+Jkernel doesn't seem to work on Mac right now. Seems like the problem is that it lower cases all paths.

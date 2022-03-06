@@ -1,5 +1,6 @@
 # TODO
 
-- [ ] Add separate section for installing packages
-- [ ] Add example for making plots
-- [ ] Get jkernel to work
+- [x] Add separate section for installing packages
+- [x] Get jkernel to work
+- [ ] Get jkernel to work on Mac
+- [ ] Add example that draws plots
