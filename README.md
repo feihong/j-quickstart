@@ -47,7 +47,3 @@ Run J's Qt IDE
 - [System/Installation/J903/Zips](https://code.jsoftware.com/wiki/System/Installation/J903/Zips)
 - [Qt IDE install](https://code.jsoftware.com/wiki/Guides/Qt_IDE/Install)
 - [J kernel for Jupyter](https://github.com/martin-saurer/jkernel)
-
-## Notes
-
-Jkernel doesn't seem to work on Mac right now. Seems like the problem is that it lower cases all paths.
